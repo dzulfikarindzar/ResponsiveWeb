@@ -1,0 +1,203 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body {
+  background: rgba(164, 165, 168, 0.3);
+  font-family: "Airbnb Cereal App";
+}
+header {
+  display: flex;
+  position: sticky;
+  top: 0;
+  background-color: white;
+}
+header .tittle {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+}
+
+header .tittle h4 {
+  font-weight: bold;
+  font-size: 32px;
+  margin: auto;
+}
+header .border h3 {
+  font-weight: bold;
+  font-size: 32px;
+  margin: auto;
+  font-family: "Airbnb Cereal App"
+}
+
+.content {
+  display: flex;
+}
+
+.content .nav {
+  width: 70px;
+  height: 100vh;
+  display: flex;
+  background-color: white;
+  flex-direction: column;
+}
+
+.content .nav {
+  position: fixed;
+  width: 100px;
+  height: 100%;
+}
+
+.container-one{
+  width: 100%;
+  margin: 35px 35px 35px 80px;
+  padding-top: 0;
+}
+.card-one {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card-one .item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.card-one .item .tittle {
+  font-size: 20px;
+  margin: 0;
+}
+.card-one .item .price {
+  font-size: 19px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.content .cart {
+  height: 140vh ;
+  width: 100%;
+  background-color: white;
+}
+
+.cart-content img {
+  margin-top: 20px;
+  max-width: 100%;
+}
+
+.cart-content h4 {
+  font-size: 25px;
+}
+.cart p {
+  font-size: 16px;
+  color: #CECECE;
+}
+
+@media screen and (max-width: 576px) {
+  .content .nav {
+    display: none;
+    height: auto;
+  }
+  .content .cart {
+    display: none;
+  }
+  header {
+    padding: 15px 0;
+  }
+  header .tittle h4 {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  header .cart {
+    display: none;
+  }
+  
+  .card-one {
+    margin-left: 70px;
+    padding: 0px;
+  }
+  .card-one .item {
+    color: black;
+    margin: 2vh 2vw;
+    width: 40vw;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  header {
+    padding: 1px 0px;
+  }
+
+  header i {
+    margin: 30px;
+    padding: 0px;
+  }
+  header .tittle h4 {
+    font-weight: bold;
+    font-size: 28px;
+  }
+  header .cart {
+    display: none;
+  }
+  .content .nav {
+    display: inline;
+    height: 100%;
+  }
+  .card-one {
+    margin-left: 92px;
+    padding: 9px;
+  }
+  .card-one .item {
+    color: black;
+    margin: 2vh 2vw;
+    width: 30vw;
+  }
+  .content .cart {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  header {
+    padding: 1px 0px;
+  }
+  .content .nav {
+    height: 100%;
+    width: 90px;
+  }
+@media only screen and (min-width: 1100px) {
+  header{
+    padding: 0px;
+  }
+  header .cart {
+    display: inline;
+    width: 397px;
+  }
+  header .cart .span-cart {
+    display: none;
+    left: 12px;
+  }
+
+  header .cart h3 {
+    font-size: 25px;
+    margin: 29px;
+    font-weight: bold;
+  }
+  .content .nav {
+    width: 90px;
+    height: 92vh;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+  }
+
+  .card-one .item {
+    width: 15vw;
+    margin: 15px;
+  }
+  .content .cart {
+    display: inline;
+    width: 305px;
+  }
+  .cart .cart-content {
+    width: 300px;
+  }
+}
